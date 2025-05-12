@@ -37,10 +37,10 @@ const fs = require('fs');
         });
     });
 
-    // Salva os resultados em um arquivo JSON
+    // Saves information in JSON file
     fs.writeFileSync('results/produtos.json', JSON.stringify(produtos, null, 2), 'utf-8');
 
-    console.log('Arquivo produtos.json criado com sucesso!');
+    console.log('Achive.json created succesfully!');
 
     await browser.close();
 })();
